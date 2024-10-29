@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth; 
+}
+
+section {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#about {
+    background-color: #ecf0f1;
+}
+
+#about #adrienForm {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #48c9b0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #48c9b0;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+}
+
+nav h1 {
+ padding-left: 10px;
+}
+
+nav ul {
+    align-items: center;
+    justify-items: flex-end;
+    margin-right: 20px;
+}
+
+.hero {
+    background-color: #ecf0f1;
+    text-align: center;
+    padding: 100px 20px;
+    color: #2c3e50;
+    min-height: 100vh;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #48c9b0;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #1abc9c;
+}
+
+#home {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('chewingteeth.png');
+    background-color: #d8d9c7;    
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+#locations {
+    background-color: #f9f9f9;
+}
+
+#locations h2, #about h2 {
+    font-size: 2em;
+    color: #48c9b0;
+    margin-bottom: 20px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px); 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.cardHeader {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cardHeader img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardHeader p {
+    position: absolute;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.card p {
+    padding: 15px;
+   
+    text-align: center;
+}
+
+.cardButton {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #48c9b0;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; 
+}
+
+
+
